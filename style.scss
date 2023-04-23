@@ -3,6 +3,8 @@ $green:#009e9e;
 
 *{
     box-sizing: border-box!important;
+    padding:0px;
+    margin:0px;
 }
 
 @font-face {
@@ -45,6 +47,9 @@ nav{
 height:10vh;
 background:white;
 color:#1a1a1a;
+@media(max-width:1100px){
+height:100%
+}
 
 a{
     color:#1a1a1a;
@@ -90,11 +95,15 @@ h1{
     font-family: 'Eiko';
     font-size:5rem;
     line-height: 1;
+    @media(max-width:1100px){
+    font-size: 2rem;
+    }
 }
 .container-main{
-    height:80vh;
+    height:90vh;
     display: flex;
     align-items: center;
+    width: 100vw;
 
 }
 
@@ -104,6 +113,9 @@ ul {
         font-size: 2rem;
         font-weight: 700;
         text-align:center;
+        @media(max-width:1100px){
+        font-size: .85rem;
+        }
       
         
     }
@@ -147,6 +159,11 @@ ul {
     padding:0px!important;
     display:none;
     opacity:0;
+    @media(max-width:1100px){
+    top:0;
+    height:100vh;
+
+    }
    
 
     .row{
@@ -167,6 +184,9 @@ ul {
         background-color: white;
         display: flex;
         align-items: center;
+        @media(max-width:1100px){
+        height: 100vh;
+        }
         
 
         form{

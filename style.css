@@ -1,6 +1,8 @@
 * {
   -webkit-box-sizing: border-box !important;
           box-sizing: border-box !important;
+  padding: 0px;
+  margin: 0px;
 }
 
 @font-face {
@@ -46,6 +48,12 @@ nav {
   height: 10vh;
   background: white;
   color: #1a1a1a;
+}
+
+@media (max-width: 1100px) {
+  nav {
+    height: 100%;
+  }
 }
 
 nav a {
@@ -108,20 +116,33 @@ h1 {
   line-height: 1;
 }
 
+@media (max-width: 1100px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
 .container-main {
-  height: 80vh;
+  height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100vw;
 }
 
 ul li {
   font-size: 2rem;
   font-weight: 700;
   text-align: center;
+}
+
+@media (max-width: 1100px) {
+  ul li {
+    font-size: .85rem;
+  }
 }
 
 ul a {
@@ -170,6 +191,13 @@ li:hover::before {
   opacity: 0;
 }
 
+@media (max-width: 1100px) {
+  .container-form {
+    top: 0;
+    height: 100vh;
+  }
+}
+
 .container-form .row {
   padding: 0px !important;
   margin: 0px !important;
@@ -189,6 +217,12 @@ li:hover::before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 1100px) {
+  .container-form .form-wrapper {
+    height: 100vh;
+  }
 }
 
 .container-form .form-wrapper form {
