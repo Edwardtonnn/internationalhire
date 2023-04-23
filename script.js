@@ -30,3 +30,26 @@ closeIcon.addEventListener('click',()=>{
         
     })
 })
+
+gsap.fromTo("h1, p",{
+    opacity:0,
+    x:20
+},
+    {
+        opacity:1,
+        x:0,
+    duration:.5,
+    ease:'power2.inOut',
+    stagger:.1
+})
+gsap.fromTo(countryLink,{
+    opacity:0,
+    x:20
+},
+    {
+        opacity:1,
+        x:0,
+    duration:.5,
+    ease:'power2.inOut',
+    stagger:.1
+})

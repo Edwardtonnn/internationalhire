@@ -126,6 +126,7 @@ ul li {
 
 ul a {
   text-decoration: none;
+  position: relative;
 }
 
 ul {
