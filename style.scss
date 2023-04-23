@@ -123,6 +123,8 @@ ul {
     font-size: 24px;
     cursor: pointer;
     overflow: hidden;
+    margin:10px 0;
+    border-radius: 80px;
   }
   li::before {
     content: '';
@@ -133,7 +135,7 @@ ul {
     height: 100%;
     background-color: $green;
     z-index: -1;
-    transition: top 0.5s ease-out;
+    transition: top 0.25s ease-out;
   }
   li:hover::before {
     top: 0;
@@ -156,19 +158,22 @@ ul {
     }
 
     .empty{
-        background:#009e9e81;
-        mix-blend-mode:screen;
+        // background:#009e9e81;
+        background:transparent;
+        
         
     }
     .form-wrapper{
-        background-color: #009e9e;
+        background-color: white;
         display: flex;
         align-items: center;
+        
 
         form{
             max-width: 70%;
             margin: 0 auto;
             width: 70%;
+            color:#1a1a1a;
         }
         }
   }
@@ -180,11 +185,17 @@ ul {
  font-size: 23px;
     height:40px;
     width:40px;
-    background:black;
+   
     margin:0px;
     padding:0px;
     border-radius:20px;
+    color:#1a1a1a;
     cursor: pointer;
+    &:hover{
+        background:$green;
+        color:white;
+        transition: .3s ease-in-out;
+    }
    
    
 

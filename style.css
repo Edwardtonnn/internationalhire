@@ -140,6 +140,8 @@ li {
   font-size: 24px;
   cursor: pointer;
   overflow: hidden;
+  margin: 10px 0;
+  border-radius: 80px;
 }
 
 li::before {
@@ -151,8 +153,8 @@ li::before {
   height: 100%;
   background-color: #009e9e;
   z-index: -1;
-  -webkit-transition: top 0.5s ease-out;
-  transition: top 0.5s ease-out;
+  -webkit-transition: top 0.25s ease-out;
+  transition: top 0.25s ease-out;
 }
 
 li:hover::before {
@@ -176,12 +178,11 @@ li:hover::before {
 }
 
 .container-form .empty {
-  background: #009e9e81;
-  mix-blend-mode: screen;
+  background: transparent;
 }
 
 .container-form .form-wrapper {
-  background-color: #009e9e;
+  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -194,6 +195,7 @@ li:hover::before {
   max-width: 70%;
   margin: 0 auto;
   width: 70%;
+  color: #1a1a1a;
 }
 
 span.close {
@@ -204,10 +206,17 @@ span.close {
   font-size: 23px;
   height: 40px;
   width: 40px;
-  background: black;
   margin: 0px;
   padding: 0px;
   border-radius: 20px;
+  color: #1a1a1a;
   cursor: pointer;
+}
+
+span.close:hover {
+  background: #009e9e;
+  color: white;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 /*# sourceMappingURL=style.css.map */
