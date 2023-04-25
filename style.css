@@ -48,6 +48,7 @@ nav {
   height: 10vh;
   background: white;
   color: #1a1a1a;
+  padding: 0 7rem;
 }
 
 @media (max-width: 1100px) {
@@ -131,6 +132,7 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
   width: 100vw;
+  padding: 0 7rem;
 }
 
 ul li {
@@ -148,6 +150,11 @@ ul li {
 ul a {
   text-decoration: none;
   position: relative;
+  display: block;
+}
+
+ul .tl {
+  text-align: right;
 }
 
 ul {
