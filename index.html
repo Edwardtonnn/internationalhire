@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <nav>
         <div class="container-fluid">
             <div>
@@ -23,72 +24,90 @@
         </div>
     </nav>
 
-    <div class="container-fluid container-main">
-        <div class="row w-100 d-flex justify-content-between h-100 align-items-center">
-            <div class="col-lg-5">
-                <h1 class="my-5">Find the right talent to drive success</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis reprehenderit rem aspernatur assumenda! Minima reiciendis pariatur ad tempore earum. Porro quaerat, debitis obcaecati a quod inventore iure. Enim, nemo incidunt.</p>
-            </div>
-
-            <div class="col-lg-5">
-              <ul style="columns: 2;" class="list-unstyled">
-                <a href="#">
-                  <li data-bg="canada.jpg">Canada</li>
-                </a>
-                <a href="#">
-                  <li data-bg="united-states.jpg">United States</li>
-                </a>
-                <a href="#">
-                  <li data-bg="mexico.jpg">Mexico</li>
-                </a>
-                <a href="#">
-                  <li data-bg="el-salvador.jpg">El Salvador</li>
-                </a>
-                <a href="#" class="tl">
-                  <li data-bg="guatemala.jpg">Guatemala</li>
-                </a>
-                <a href="#" class="tl">
-                  <li data-bg="nicaragua.jpg">Nicaragua</li>
-                </a>
-                <a href="#" class="tl">
-                  <li data-bg="honduras.jpg">Honduras</li>
-                </a>
-                <a href="#" class="tl">
-                  <li data-bg="costa-rica.jpg">Costa Rica</li>
-                </a>
-              </ul>
-              
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid container-form">
-      <div class="row">
-        <div class="col-lg-6 empty"></div>
-        <div class="col-lg-6 form-wrapper ">
-          <form>
-            <span class="close">x</span>
-            <div class="mb-3">
-              <span>Hire in:</span>
-              <h1 class="titleText"></h1>
-            </div>
-<div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label">Email address</label>
-  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    <div class="container-main">
+      
 </div>
-<div class="mb-3">
-  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-</div>
-<div class="mb-3">
-  <button class="btn btn-xl">Submit</button>
-</div>
-          </form>
-        </div>
+<div class="container-padding">
+  <div class="row  d-flex justify-content-between h-100 align-items-center">
+      <div class="col-lg-5 selectedImage">
+          <h1>Find the right talent to drive success</h1>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis reprehenderit rem aspernatur assumenda! Minima reiciendis pariatur ad tempore earum. Porro quaerat, debitis obcaecati a quod inventore iure. Enim, nemo incidunt.</p>
       </div>
 
-    </div>
+      <div class="col-lg-5 container-information">
+        <ul style="columns: 2;" class="list-unstyled country-list">
+          <a href="#">
+            <li data-bg="canada.jpg">Canada</li>
+          </a>
+          <a href="#">
+            <li data-bg="united-states.jpg">United States</li>
+          </a>
+          <a href="#">
+            <li data-bg="mexico.jpg">Mexico</li>
+          </a>
+          <a href="#">
+            <li data-bg="el-salvador.jpg">El Salvador</li>
+          </a>
+          <a href="#" class="tl">
+            <li data-bg="guatemala.jpg">Guatemala</li>
+          </a>
+          <a href="#" class="tl">
+            <li data-bg="nicaragua.jpg">Nicaragua</li>
+          </a>
+          <a href="#" class="tl">
+            <li data-bg="honduras.jpg">Honduras</li>
+          </a>
+          <a href="#" class="tl">
+            <li data-bg="costa-rica.jpg">Costa Rica</li>
+          </a>
+        </ul>
 
+
+
+        
+
+        <form class="d-none form-container" novalidate id="myForm">
+          <span class="close-button">x</span>
+          <div class="mb-3">
+            <span>Hire in:</span>
+            <h1 class="titleText"></h1>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+            <div class="invalid-feedback">Please provide a valid email.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+            <div class="invalid-feedback">This field is required.</div>
+          </div>
+          <div class="mb-3">
+            <button class="btn btn-xl" type="submit" id="submitBtn">Submit</button>
+          </div>
+        </form>
+        
+        
+        
+
+        <div class="container-thank-you text-center d-none">
+          <span class="thank-you-close">x</span>
+        
+          <h2 class="title-lg">Thank You</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae rerum laudantium at alias, autem repellat debitis veritatis quas reprehenderit? </p>
+          <p><strong>In the meanwhile, read some of our success stories.</strong></p>
+          <a href="#" class="btn">Testimonials</a>
+        </div>
+
+
+      </div>
+
+      
+
+      
+
+  </div>
+</div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
   <script src="script.js"></script>  
